@@ -1,7 +1,5 @@
 from netmiko import Netmiko
 from netmiko import ConnectHandler
-import getpass
-import time
 
 #password=getpass.getpass('please enter password: ')
 
@@ -23,8 +21,8 @@ def router_backup(router_ip,router_username,router_password):
     print (output2)
     net_connect.disconnect()
 
-router_backup("172.20.5.254","mostafa","cisco123")
+router_backup("172.20.5.254","username_router_entered","password_router_entered")
 
 for ip in range(1,254):
     x="10.0.0"+str(ip)
-    router_backup(x,"mostafa","cisco123")
+    router_backup(x,"username_router_or_switch_entered","password_router_or_switch_entered")
